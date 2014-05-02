@@ -29,6 +29,9 @@ jQuery.fn.extend({
         'transform': 'translate(-50%, -50%)',
       });
 
+      // Set overflow hidden on parent element
+      $this.parent().css('overflow', 'hidden');
+
       // Based on highest scale factor set width and height
       if(widthScaleFactor > heightScaleFactor) {
         $this.css({
