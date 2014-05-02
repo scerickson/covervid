@@ -28,7 +28,7 @@ It is important to note that the video you target will use its' parent element t
     height: 100%;
 }
  ```
-Now, we simple call the CoverVid function on the video element, passing through the native dimensions of the video.
+Now, we simple call the <code>coverVid</code> function on the video element, passing through the native dimensions of the video.
 ```javascript
 $('.covervid-video').coverVid(1920, 1080);
  ```
