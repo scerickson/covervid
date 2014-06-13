@@ -15,7 +15,6 @@ It is important to note that the video you target will use its' parent element t
     <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
         <source src="videos/clouds.webm" type="video/webm">
         <source src="videos/clouds.mp4" type="video/mp4">
-        <source src="videos/clouds.ogv" type="video/ogg">
     </video>
 </div>
  ```
@@ -28,7 +27,7 @@ It is important to note that the video you target will use its' parent element t
     height: 100%;
 }
  ```
-Now, we simple call the CoverVid function on the video element, passing through the native dimensions of the video.
+Now, we simply call the <code>coverVid()</code> function on the video element, passing through the native dimensions of the video.
 ```javascript
 $('.covervid-video').coverVid(1920, 1080);
  ```
