@@ -1,0 +1,12 @@
+{
+	"name": "covervid",
+	"version": "0.1.0",
+	"homepage": "https://github.com/stefanerickson/covervid",
+	"author": "Stefan Erickson",
+	"devDependencies": {
+		"grunt": "~0.4.4",
+		"grunt-contrib-clean": "~0.5.0",
+		"grunt-contrib-uglify": "~0.4.0",
+		"grunt-contrib-watch": "~0.6.1"
+	}
+}
