@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>CoverVid</title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Base Styles -->
-		<style>
-			.covervid-wrapper {
-				position: absolute;
-			    top: 0; left: 0;
-			    width: 100%;
-			    height: 100%;
-			}
-			.github-link {
-				position: absolute;
-				top: 20px;
-				right: 20px;
-				opacity: 0.15;
-				-webkit-transition: 0.4s all ease;
-				-moz-transition: 0.4s all ease;
-				transition: 0.4s all ease;
-			}
-			.github-link:hover {
-				opacity: 0.4;
-			}
-		</style>
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CoverVid</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Video Markup -->
-		<div class="covervid-wrapper">
-			<video class="covervid-video" autoplay loop>
-				<source src="videos/clouds.mp4" type="video/mp4">
+	<!-- Base Styles -->
+	<style>
+		.covervid-wrapper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.github-link {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			opacity: 0.15;
+			-webkit-transition: 0.4s all ease;
+			-moz-transition: 0.4s all ease;
+			transition: 0.4s all ease;
+		}
+		.github-link:hover {
+			opacity: 0.4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Video Markup -->
+	<div class="covervid-wrapper">
+		<video class="covervid-video" autoplay loop>
+			<source src="videos/clouds.mp4" type="video/mp4">
 				<source src="videos/clouds.webm" type="video/webm">
-			</video>
-		</div>
+		</video>
+	</div>
 
-		<a href="https://github.com/stefanerickson/covervid">
-			<img class="github-link" src="images/github.svg" height="25px" />
-		</a>
+	<a href="https://github.com/stefanerickson/covervid">
+		<img class="github-link" src="images/github.svg" height="25px" />
+	</a>
 
-		<!-- Load Scripts -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="covervid.js"></script>
+	<!-- Load Scripts -->
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+	<script src="covervid.js"></script>
 
-		<!-- Call CoverVid -->
-		<script type="text/javascript">
-			$('.covervid-video').coverVid(1920, 1080);
-		</script>
+	<!-- Call CoverVid -->
+	<script type="text/javascript">
+		coverVid(document.querySelector('.covervid-video'), 1920, 1080);
+		// $('.covervid-video').coverVid(1920, 1080);
+	</script>
 
-	</body>
+</body>
+
 </html>
