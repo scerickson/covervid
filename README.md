@@ -7,7 +7,6 @@ Very simple to use, just follow these few steps...
 
 Load <code>covervid.min.js</code> (after jQuery if using it).
 ```html
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> <!-- optional -->
 <script src="covervid.min.js"></script>
  ```
  
@@ -29,9 +28,11 @@ It is important to note that the video you target will use its' parent element t
     height: 100%;
 }
  ```
-Now, we simply call the <code>coverVid()</code> function on the video element, passing through the native dimensions of the video.
+Now, we simply call the <code>coverVid(Element, Video-Width, Video-Height)</code> function on the video element, passing through the native dimensions of the video.
 ```javascript
 coverVid(document.querySelector('.covervid-video'), 1920, 1080);
-// or
+
+// or, if using jQuery
+
 $('.covervid-video').coverVid(1920, 1080);
  ```
