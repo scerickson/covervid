@@ -5,25 +5,24 @@ var coverVid = function (elem, width, height) {
 
 
 	// call sizeVideo on resize
-	function restartOnResize(callback) {
-		function debounce(fn, delay) {
-			var timer = null;
+	function debounce(fn, delay) {
+		var timer = null;
 
-			return function () {
-				var context = this,
-					args = arguments;
+		return function () {
+			var context = this,
+				args = arguments;
 
-				clearTimeout(timer);
+			window.clearTimeout(timer);
 
-				timer = setTimeout(function () {
-					fn.apply(context, args);
-				}, delay);
-			};
-		}
-		addEventListener(window, 'resize', debounce(callback, 50));
+			timer = window.setTimeout(function () {
+				fn.apply(context, args);
+			}, delay);
+		};
 	}
-	restartOnResize(sizeVideo);
-	
+	window.onresize = function () {
+		debounce(sizeVideo, 50);
+	};
+
 
 	// Set necessary styles to position video "center center"
 	elem.style.position = 'absolute';
@@ -35,7 +34,7 @@ var coverVid = function (elem, width, height) {
 
 	// Set overflow hidden on parent element
 	elem.parentNode.style.overflow = 'hidden';
-	
+
 
 	// Define the attached selector
 	function sizeVideo() {
