@@ -22,7 +22,7 @@ jQuery.fn.extend({
 
             // Set overflow hidden on parent element
             $this.parent().css('overflow', 'hidden');
-            
+
         }
 
         function sizeVideo() {
