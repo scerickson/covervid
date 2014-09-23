@@ -30,5 +30,5 @@ How do I use it?
 }
  ```
     </li>
-    <li>Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call<br/> <code>$('.covervid-video').coverVid(1920, 1080);</code>.</li>
+    <li>Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call <code>$('.covervid-video').coverVid(1920, 1080);</code>.</li>
 </ol>
