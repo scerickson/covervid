@@ -21,7 +21,7 @@ var coverVid = function (elem, width, height) {
 
 	// call sizeVideo on resize
 	window.onresize = function () {
-		debounce(sizeVideo, 50);
+		debounce(sizeVideo(), 50);
 	};
 
 	// Set necessary styles to position video "center center"
@@ -38,7 +38,7 @@ var coverVid = function (elem, width, height) {
 
 	// Define the attached selector
 	function sizeVideo() {
-
+		
 		// Get parent element height and width
 		var parentHeight = elem.parentNode.offsetHeight;
 		var parentWidth = elem.parentNode.offsetWidth;
@@ -53,11 +53,11 @@ var coverVid = function (elem, width, height) {
 
 		// Based on highest scale factor set width and height
 		if (widthScaleFactor > heightScaleFactor) {
-			elem.offsetHeight = 'auto';
-			elem.offsetWidth = parentWidth;
+			elem.style.height = 'auto';
+			elem.style.width = parentWidth+'px';
 		} else {
-			elem.offsetHeight = parentHeight;
-			elem.offsetWidth = 'auto';
+			elem.style.height = parentHeight+'px';
+			elem.style.width = 'auto';
 		}
 
 	}
