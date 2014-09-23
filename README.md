@@ -8,27 +8,26 @@ For starters, it makes your HTML5 video behave like a background cover image, bu
 
 How do I use it?
 ----------------
+1. First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.
 
-<ol>
-    <li>First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.</li>
-    <li>It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
-```html
-<div class="covervid-wrapper">
-    <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
-        <source src="videos/clouds.webm" type="video/webm">
-        <source src="videos/clouds.mp4" type="video/mp4">
-    </video>
-</div>
-```
-```css
-.covervid-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-```
-    </li>
-    <li>Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call <code>$('.covervid-video').coverVid(1920, 1080);</code>.</li>
-</ol>
+2. It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
+
+    ```html
+    <div class="covervid-wrapper">
+        <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
+            <source src="videos/clouds.webm" type="video/webm">
+            <source src="videos/clouds.mp4" type="video/mp4">
+        </video>
+    </div>
+    ```
+    ```css
+    .covervid-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    ```
+
+3. Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call <code>$('.covervid-video').coverVid(1920, 1080);</code>.
