@@ -1,11 +1,14 @@
 CoverVid
 ========
 
-Make your HTML5 video behave like a background cover image with a simple jQuery extension. Very simple to use, just follow these few steps...
+Make your HTML5 video behave like a background cover image with only 800 bytes of JS.
 
-Drop the <code>covervid.min.js</code> file into your javascript folder and load it after jQuery.
+This is a native JS fork of the original jQuery plugin. It works with both normal and jquery api calls.
+
+Very simple to use, just follow these few steps...
+
+Load <code>covervid.min.js</code> (after jQuery if using it).
 ```html
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="covervid.min.js"></script>
  ```
  
@@ -27,7 +30,12 @@ It is important to note that the video you target will use its' parent element t
     height: 100%;
 }
  ```
-Now, we simply call the <code>coverVid()</code> function on the video element, passing through the native dimensions of the video.
+ 
+Now, we simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> function on the video element, passing through the native dimensions of the video.
 ```javascript
+coverVid(document.querySelector('.covervid-video'), 1920, 1080);
+
+// or, if using jQuery
+
 $('.covervid-video').coverVid(1920, 1080);
  ```
