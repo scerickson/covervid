@@ -70,7 +70,7 @@ var coverVid = function (elem, width, height) {
 if (window.jQuery) {
 	jQuery.fn.extend({
 		'coverVid': function () {
-			coverVid(this, arguments[0], arguments[1]);
+			coverVid(this[0], arguments[0], arguments[1]);
 			return this;
 		}
 	});
