@@ -1,18 +1,17 @@
 CoverVid
 ========
 
-Make your HTML5 video behave like a background cover image with only 800 bytes of JS.
+Why is it special?
+------------------
 
-This is a native JS fork of the original jQuery plugin. It works with both normal and jquery api calls.
+For starters, it makes your HTML5 video behave like a background cover image, but other plugins also do that. CoverVid is very lightweight, with only 800 bytes of Javascripts. It is usable in native Javascript and jQuery. Its' logic is parent based, meaning the parent element can be any size (Not necessarily just a full-screen background).
 
-Very simple to use, just follow these few steps...
+How do I use it?
+----------------
 
-Load <code>covervid.min.js</code> (after jQuery if using it).
-```html
-<script src="covervid.min.js"></script>
- ```
- 
-It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
+<ol>
+    <li>First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.</li>
+    <li>It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
 ```html
 <div class="covervid-wrapper">
     <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
@@ -30,12 +29,6 @@ It is important to note that the video you target will use its' parent element t
     height: 100%;
 }
  ```
- 
-Now, we simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> function on the video element, passing through the native dimensions of the video.
-```javascript
-coverVid(document.querySelector('.covervid-video'), 1920, 1080);
-
-// or, if using jQuery
-
-$('.covervid-video').coverVid(1920, 1080);
- ```
+    </li>
+    <li>Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call<br/> <code>$('.covervid-video').coverVid(1920, 1080);</code>.</li>
+</ol>
