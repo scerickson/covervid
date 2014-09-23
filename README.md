@@ -11,7 +11,7 @@ How do I use it?
 
 <ol>
     <li>First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.</li>
-    <li>It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
+    <li>It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.</li>
 ```html
 <div class="covervid-wrapper">
     <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
@@ -29,6 +29,5 @@ How do I use it?
     height: 100%;
 }
  ```
-    </li>
     <li>Now, we would simply call the <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call <code>$('.covervid-video').coverVid(1920, 1080);</code>.</li>
 </ol>
