@@ -20,7 +20,6 @@ function headerParallax() {
 		$('.masthead-arrow ').css('opacity', 0.4-st/250);
 		headerScroll.css({
 			'-webkit-transform' : 'translateY(' + st/7 + '%)',
-			'-moz-transform' : 'translateY(' + st/7 + '%)',
 			'-ms-transform' : 'translateY(' + st/7 + '%)',
 			transform : 'translateY(' + st/7 + '%)'
 		});
