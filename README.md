@@ -1,10 +1,16 @@
 CoverVid
 ========
-
+At the core of CoverVid, is the idea of this little CSS snippet being possible...
+```css
+.selector {
+    background-video: url('../foo/bar.mp4 || ../foo/bar.webm');
+    background-size: cover;
+    background-position: center center;
+}
+```
 Why is it special?
 ------------------
-
-For starters, it makes your HTML5 video behave like a background cover image, but other plugins also do that. CoverVid is very lightweight, with only 800 bytes of Javascripts. It is usable in native Javascript and jQuery. Its' logic is parent based, meaning the parent element can be any size (Not necessarily just a full-screen background).
+CoverVid is very lightweight, with only 800 bytes of Javascripts. It is usable in native Javascript and jQuery. Its' logic is parent based, meaning the parent element can be any size (Not necessarily just a full-screen background).
 
 How do I use it?
 ----------------
