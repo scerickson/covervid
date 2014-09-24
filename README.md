@@ -21,8 +21,8 @@ How do I use it?
     ```html
     <div class="covervid-wrapper">
         <video class="covervid-video" autoplay loop poster="img/video-fallback.png">
-            <source src="videos/clouds.webm" type="video/webm">
-            <source src="videos/clouds.mp4" type="video/mp4">
+            <source src="videos/video.webm" type="video/webm">
+            <source src="videos/video.mp4" type="video/mp4">
         </video>
     </div>
     ```
