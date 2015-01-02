@@ -19,6 +19,10 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "assets",
+    "index.html",
+    "Gruntfile.js",
+    "package.json"
   ]
 }
