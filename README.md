@@ -14,7 +14,7 @@ CoverVid is very lightweight, with only 800 bytes of Javascripts. It is usable i
 
 How do I use it?
 ----------------
-1. First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.
+1. First pull the project down from <a href="http://github.com/stefanerickson/covervid">GitHub</a>, or install with bower running <code>bower install covervid</code> and link <code>covervid.min.js</code> into your site. Make sure it is loaded after jQuery if using it.
 
 2. It is important to note that the video you target will use its' parent element to scale. With that in mind, we will create some simple markup and add some base styling to size the videos' parent/wrapper element.
 
