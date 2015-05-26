@@ -3,25 +3,35 @@ var coverVid = function (elem, width, height) {
 	// call sizeVideo on load
 	document.addEventListener('DOMContentLoaded', sizeVideo);
 
-	// debounce for resize function
-	function debounce(fn, delay) {
-		var timer = null;
+	// throttle for resize function
+	function throttle(fn, threshhold, scope) {
+	  if(threshhold === undefined) {
+	    threshhold = 250;
+	  }
+	  var last,
+	      deferTimer;
+	  return function () {
+	    var context = scope || this;
 
-		return function () {
-			var context = this,
-				args = arguments;
-
-			window.clearTimeout(timer);
-
-			timer = window.setTimeout(function () {
-				fn.apply(context, args);
-			}, delay);
-		};
+	    var now = +new Date(),
+	        args = arguments;
+	    if (last && now < last + threshhold) {
+	      // hold on to it
+	      clearTimeout(deferTimer);
+	      deferTimer = setTimeout(function () {
+	        last = now;
+	        fn.apply(context, args);
+	      }, threshhold);
+	    } else {
+	      last = now;
+	      fn.apply(context, args);
+	    }
+	  };
 	}
 
 	// call sizeVideo on resize
 	window.onresize = function () {
-		debounce(sizeVideo(), 50);
+		throttle(sizeVideo(), 50);
 	};
 
 	// Set necessary styles to position video "center center"
