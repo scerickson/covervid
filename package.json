@@ -1,6 +1,6 @@
 {
 	"name": "covervid",
-	"version": "1.0.1",
+	"version": "1.1",
 	"homepage": "https://github.com/bond-agency/covervid",
 	"author": "Joonas Salovaara",
 	"devDependencies": {
