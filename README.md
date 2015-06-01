@@ -37,3 +37,7 @@ How do I use it?
     ```
 
 3. Now, we would simply call <code>coverVid(Container-Element, Video-Width, Video-Height)</code> on the video element, passing through the native dimensions of the video. If you are using jQuery, we would call <code>$('.covervid-video').coverVid(1920, 1080);</code>.
+
+Browser support?
+----------------
+CoverVid support is basically IE9+.
