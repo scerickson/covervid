@@ -33,6 +33,12 @@ var coverVid = function (elem, width, height) {
 	// Set overflow hidden on parent element
 	elem.parentNode.style.overflow = 'hidden';
 
+	// Set poster as background cover image
+	var posterImage = elem.getAttribute('poster');
+	elem.removeAttribute('poster');
+	elem.parentNode.style.backgroundImage = 'url(' + posterImage + ')';
+	elem.parentNode.style.backgroundSize = 'cover';
+	elem.parentNode.style.backgroundPosition = 'center center';
 
 	// Define the attached selector
 	function sizeVideo() {
