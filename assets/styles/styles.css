@@ -26,8 +26,10 @@ html {
     bottom: 0;
     right: 0;
     color: #fff;
-    opacity: 0.5;
+    opacity: 0.6;
     font-size: 12px;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     padding-right: 10px;
     bottom: 10px;
     text-decoration: none;
