@@ -95,9 +95,8 @@ p {
     font-size: 18px;
     color: #414141;
     letter-spacing: -0.02em;
-    font-family: helvetica, sans-serif;
-    font-weight: 100;
-    line-height: 1.5;
+    font-weight: 400;
+    line-height: 1.6;
 }
 a {
     color: #1191db;
@@ -110,27 +109,26 @@ ol {
 }
 ol li {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 30px;
     font-size: 18px;
     color: #414141;
     letter-spacing: -0.02em;
-    font-family: helvetica, sans-serif;
-    font-weight: 100;
-    line-height: 1.5;
-    padding-left: 70px;
+    font-weight: 400;
+    line-height: 1.6;
+    padding-left: 60px;
 }
 ol li:after {
     position: absolute;
-    top: 0;
+    top: 3px;
     left: 0;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
     text-align: center;
-    font-weight: 100;
+    font-weight: 400;
     color: #fff;
-    font-size: 27px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: 40px;
     background-color: #353535;
 }
 ol li:nth-child(1):after {
