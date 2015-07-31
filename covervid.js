@@ -1,7 +1,7 @@
 var coverVid = function (elem, width, height) {
 
 	// call sizeVideo on load
-	document.addEventListener('DOMContentLoaded', sizeVideo);
+	sizeVideo();
 
 	// debounce for resize function
 	function debounce(fn, delay) {
