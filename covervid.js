@@ -20,7 +20,11 @@ var coverVid = function (elem, width, height) {
 	}
 
 	// call sizeVideo on resize
-	window.addEventListener('resize', debounce(sizeVideo, 50));
+	if (window.addEventListener){
+        	window.addEventListener('resize', debounce(sizeVideo, 50));
+	} else if (window.attachEvent){
+		window.attachEvent('resize', debounce(sizeVideo, 50));
+	}
 
 	// Set necessary styles to position video "center center"
 	elem.style.position = 'absolute';
