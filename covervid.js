@@ -20,7 +20,12 @@ var coverVid = function (elem, width, height) {
 	}
 
 	// call sizeVideo on resize
-	window.addEventListener('resize', debounce(sizeVideo, 50));
+	if (_checkbox.addEventListener) {
+		_checkbox.addEventListener("resize", debounce(sizeVideo, 50), false);
+	}
+	else {
+		_checkbox.attachEvent("resize", debounce(sizeVideo, 50));
+	}
 
 	// Set necessary styles to position video "center center"
 	elem.style.position = 'absolute';
