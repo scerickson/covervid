@@ -8,6 +8,12 @@
 	"engines": {
 		"node": ">=4 <=5"
 	},
+	"files": [
+		"covervid.js",
+		"covervid.min.js",
+		"package.json",
+		"bower.json"
+	],
 	"dependencies": {
 	},
 	"devDependencies": {
