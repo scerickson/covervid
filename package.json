@@ -1,8 +1,15 @@
 {
 	"name": "covervid",
+	"description": "Make your HTML5 video behave like a background cover image with this lightweight Javascript plugin / jQuery extension",
 	"version": "1.0.0",
 	"homepage": "https://github.com/stefanerickson/covervid",
 	"author": "Stefan Erickson",
+	"main": "covervid.js",
+	"engines": {
+		"node": ">=4 <=5"
+	},
+	"dependencies": {
+	},
 	"devDependencies": {
 		"grunt": "~0.4.4",
 		"grunt-contrib-clean": "~0.5.0",
