@@ -1,5 +1,7 @@
 CoverVid
 ========
+#### ⚠️ This project is no longer maintained now that their is widespread support for the [`object-fit`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) and [`object-position`](https://developer.mozilla.org/en-US/docs/Web/CSS/object-position) CSS properties in modern browsers ⚠️
+
 At the core of CoverVid, is the idea of this little CSS snippet being possible...
 ```css
 .selector {
