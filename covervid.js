@@ -46,7 +46,7 @@ var coverVid = function (elem, width, height) {
 
 	// Define the attached selector
 	function sizeVideo() {
-
+  
 		// Get parent element height and width
 		var parentHeight = elem.parentNode.offsetHeight;
 		var parentWidth = elem.parentNode.offsetWidth;
